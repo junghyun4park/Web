@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {ist-style: none}
+
+        #px li:nth-child(1) {}
+        #px li:nth-child(2) { font-size: 12px}
+        #px li:nth-child(3) { font-size: 16px}
+        #px li:nth-child(4) { font-size: 24px}
+        #px li:nth-child(5) { font-size: 32px}
+
+        #em li:nth-child(1) {}
+        #em li:nth-child(2) { font-size: .5em}
+        #em li:nth-child(3) { font-size: 1em}
+        #em li:nth-child(4) { font-size: 1.5em}
+        #em li:nth-child(5) { font-size: 2em}
+
+        #pt li:nth-child(1) {}
+        #pt li:nth-child(2) { font-size: 12pt}
+        #pt li:nth-child(3) { font-size: 16pt}
+        #pt li:nth-child(4) { font-size: 24pt}
+        #pt li:nth-child(5) { font-size: 32pt}
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>px 단위 - 절대크기</p>
+        <ul id='px'>
+            <li>HTML5&CSS3 - default</li>
+            <li>HTML5&CSS3 - 12px</li>
+            <li>HTML5&CSS3 - 16px</li>
+            <li>HTML5&CSS3 - 24px</li>
+            <li>HTML5&CSS3 - 32px</li>
+        </ul>
+        <hr>
+        <p>em 단위 - 상대크기</p>
+        <ul id='em'>
+            <li>HTML5&CSS3 - default</li>
+            <li>HTML5&CSS3 - .5em</li>
+            <li>HTML5&CSS3 - 1em</li>
+            <li>HTML5&CSS3 - 1.5em</li>
+            <li>HTML5&CSS3 - 2em</li>
+        </ul>
+        <hr>
+        <p>pt 단위 - 절대크기</p>
+        <ul id='pt'>
+            <li>HTML5&CSS3 - default</li>
+            <li>HTML5&CSS3 - 12pt</li>
+            <li>HTML5&CSS3 - 16pt</li>
+            <li>HTML5&CSS3 - 24pt</li>
+            <li>HTML5&CSS3 - 32pt</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+<!--
+pt : 
+일반 문서(워드 등)에서 많이 사용되는 단위. 
+포인트는 인치(inch)의 개념이고, 1인치(inch)는 2.54 센티미터(cm)이다. 1pt는 72분의 1인치(1/72)를 말한다.
+
+em :
+해당폰트의 대문자 M의 너비를 기준으로 함.
+
+px :
+기기마다 1px 의 크기는 다를 수 있다.
+-->

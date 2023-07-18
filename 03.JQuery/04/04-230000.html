@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-21</title>    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>        
+        $(document).ready(function () { 
+            $('#all_check').change(function (event) {
+                if (this.checked) {
+                    // $('#check_item').children().attr('checked', true);
+                    $('#check_item').children().prop('checked', true);
+                    // $('input[type=checkbox]').prop('checked', true);                                
+                } else {
+                    // $('#check_item').children().attr('checked', false);
+                    $('#check_item').children().prop('checked', false);
+                    // $('input[type=checkbox]').prop('checked', false);   
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="all_check" />
+    <label>ALL</label>
+    <div id="check_item">
+        <input type="checkbox" />
+        <label>A option</label>
+        <input type="checkbox" />
+        <label>B option</label>
+        <input type="checkbox" />
+        <label>C option</label>
+    </div>
+</body>
+</html>

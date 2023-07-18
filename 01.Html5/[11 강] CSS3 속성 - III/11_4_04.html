@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #contain {
+            width:800px; height:662px;
+            margin:5px; 
+            border:1px solid #000000;
+            padding:10px;
+        }
+
+        #header {
+            width:800px; height:110px;
+            text-align:center;
+            line-height:7;
+            border:1px solid #000000;
+            position:relative;
+        }
+
+        #navigation {
+            width:800px; height:110px;
+            margin:0 auto;
+            text-align:center;
+            line-height:60px;;
+            border:1px solid #000000;
+            position:relative;
+            top:5px;
+        }
+
+        #nav div {
+            width:120px;
+            height:40px;
+            line-height:40px;
+            float:left;
+            text-align:center;
+            font-size:1em;
+            bordor:10px solid #000000;
+            position:relative;
+        }
+
+        a {
+            text-decoration:none;
+            color:#000000;
+        }
+
+        #content {
+            width:800px; height:310px;
+            border:1px solid #000000;
+            position:relative;
+            top:10px;
+        }
+
+        #content1 {
+            width:630px; height:290px;
+            border:1px solid #000000;
+            text-align:center;
+            position:relative;
+            top:10px; left:10px;
+        }
+
+        #content2 {
+            width:130px; height:290px;
+            text-align:center;
+            border:1px solid #000000;
+            position:absolute;
+            top:10px; left:655px;
+            }
+
+        #footer {
+            width:800px; height:110px;
+            text-align:center;
+            line-height:7;
+            border:1px solid #000000;
+            position:relative;
+            top:15px; left:0px;
+        }
+    </style>
+</head>
+<body>
+     <div id="contain">
+        <div id="header">HEADER</div>
+        <div id="navigation">NAVIGATION
+            <div id="nav">
+                <div><a href="#">menu1</a></div>
+                <div><a href="#">menu2</a></div>
+                <div><a href="#">menu3</a></div>
+                <div><a href="#">menu4</a></div>
+                <div><a href="#">menu5</a></div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="content1">CONTENT</div>
+            <div id="content2">BANNER</div>
+        </div>
+
+        <div id="footer">FOOTER</div>
+    </div>
+
+</body>
+</html>

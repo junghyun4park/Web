@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-3</title>
+    <style>
+        .reverse {
+            background: Black;
+            color: White;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function () { 
+            // 이벤트를 연결합니다.
+            $('h1').click(function () {
+                // 출력합니다.
+                $(this).html('CLICK');
+                alert('이벤트가 발생했습니다.')
+                // 이벤트를 제게합니다.
+                $(this).unbind();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+</body>
+</html>

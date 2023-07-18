@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-06 : document.getElementsByTagName()</title>
+    <script>
+        function change () {
+            var spanArray = document.getElementsByTagName("span");        
+            for(var i=0; i<spanArray.length; i++) {
+                var span = spanArray[i];
+                span.style.color = "orchid";
+                span.style.fontSize = "20px";
+            }
+        }
+
+        function changeSnack () {
+            var spanArray = document.getElementsByClassName("snack");        
+            for(var i=0; i<spanArray.length; i++) {
+                var span = spanArray[i];
+                span.style.color = "red";
+                span.style.fontSize = "20px";
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <h3>내가 좋아하는 과일 & 과자
+        <button onclick="change()">누르세요</button></h3>
+    <hr>
+    저는 빨간 <span>사과</span>를 좋아해서<br />
+    아침마다 한 개씩 먹고 있지요. 운동할 때는 중간 중간에 <br />
+    <span>바나나</span>를 먹지요. 탄수화물 섭취가 빨라<br />
+    힘이 납니다. 또한 달콤한 향기를 품은 <span>체리</span>와 <br />
+    여름 냄새 물씬 나는 <span>자두</span>를 좋아합니다.<br /><br />
+
+    <span class="fruit">사과</span>
+    <span class="fruit">바나나</span>
+    <span class="fruit">채리</span>
+    <span class="fruit">자두</span>
+    <span class="snack">새우깡</span>
+    <span class="snack">치토스</span>
+    <span class="snack">꼬깔콘</span>
+    <span class="snack">양파링</span>
+
+    <div id="name1" class="snack">홍길동</div>
+</body>
+</html>

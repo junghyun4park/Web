@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-25</title>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function () { 
+            // 변수를 선언합니다.
+            var h1 = '<h1>Header1</h1>';
+            var h2 = '<h2>Header2</h2>';
+
+            // 문서 객체를 추가합니다. 
+            // $('body').append(h1, h2, h1, h2);
+            // $('body').prepend(h1, h2, h1, h2);
+            // $('body').after(h1, h2, h1, h2);
+            // $('body').before(h1, h2, h1, h2);
+
+            $(h1, h2).appendTo('body');
+            // $(h1, h2).prependTo('body');
+            // $(h1, h2).insertAfter('body');
+            // $(h1, h2).insertBefore('body');
+
+        });
+    </script>
+</head>
+<body>
+    <p>홍길동</p>
+</body>
+</html>

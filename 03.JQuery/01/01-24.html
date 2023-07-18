@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-24</title>
+    <script>
+        // 플러그인 간의 충돌을 제거합니다.
+        $.noConflict();
+        var J = jQuery;
+
+        // jQuery를 사용합니다.
+        J(document).ready(function ()) {
+            J('h1').removeClass('high_light');
+        });
+    </script>
+
+</head>
+<body>
+    <h1 class="high_light">홍길동</h1>
+</body>
+</html>
